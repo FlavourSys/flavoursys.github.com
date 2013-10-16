@@ -14,31 +14,22 @@
 
     </head>
     <body>
+        <header>
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+        </header>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+        {{ content }}
+
+        <footer>
+          <div class="contact">
+            <p>
+              <small>Brought to you by the <a href="mailto:technology@flavoursys.com">FlavourSys Developers</a>.</small>
+            </p>
           </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
+          <div class="links">
+            <a href="http://flavoursys.com"><img src="/img/strawberry_120.png" width="40px" height="40px"></a>
+            <a href="https://github.com/FlavourSys"><img src="/img/GitHub-Mark-120px-plus.png" width="40px" height="40px"></a>
           </div>
-        </div>
-
+        </footer>
     </body>
 </html>
